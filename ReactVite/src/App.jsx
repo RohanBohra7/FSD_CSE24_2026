@@ -3,7 +3,10 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
-import ICard from './assets/components/ICard'
+import ICardGallery from './components/ICardGallery'
+
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,8 +17,8 @@ function App() {
     <h2 style={{color:'violet'}}>I am a 3rd year Engineering Student </h2>
     <h2 style={{color:'violet'}}>My skills are programming, communication, web dev and dsa  </h2>
     <h2 style={{color:'violet'}}>Welcome to React App Development </h2>
-
-    <ICard />
+   <ICardGallery />
+   
     </div>
   )
 }
