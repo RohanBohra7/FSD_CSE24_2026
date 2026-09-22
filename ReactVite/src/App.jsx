@@ -1,24 +1,29 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
-import ICardGallery from './components/ICardGallery'
+// import heroImg from './assets/hero.png'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from './assets/vite.svg'
+// import './App.css'
+// import ICardGallery from './components/ICardGallery'
+import MyState from './components/MyState'
+import ColorChange from './components/ColorChange'
 
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <div style={{border: '2px solid white', width:'800px', height:'600px'}}>
-    <h1 style={{color:'red'}}>Welcome, My name is Rohan </h1>
+    {/* <h1 style={{color:'red'}}>Welcome, My name is Rohan </h1>
     <h2 style={{color:'violet'}}>I am a 3rd year Engineering Student </h2>
     <h2 style={{color:'violet'}}>My skills are programming, communication, web dev and dsa  </h2>
     <h2 style={{color:'violet'}}>Welcome to React App Development </h2>
    <ICardGallery />
+    */}
    
+    {/* <MyState /> */}
+    <ColorChange />
     </div>
   )
 }
