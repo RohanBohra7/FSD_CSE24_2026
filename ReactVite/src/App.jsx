@@ -4,8 +4,16 @@ import { useState } from 'react'
 // import viteLogo from './assets/vite.svg'
 // import './App.css'
 // import ICardGallery from './components/ICardGallery'
-import MyState from './components/MyState'
-import ColorChange from './components/ColorChange'
+// import MyState from './components/MyState'
+// import PracticeNameChange from './components/PracticeNameChange'
+// import ImageManipulation from './components/ImageManipulation'
+// import FetchProduct from './components/FetchProduct'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import Home from './components/Home'
+import Login from './components/Login'
+import Registration from './components/Registration'
+import Dashboard from './components/Dashboard'
+
 
 
 
@@ -14,17 +22,22 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div style={{border: '2px solid white', width:'800px', height:'600px'}}>
-    {/* <h1 style={{color:'red'}}>Welcome, My name is Rohan </h1>
-    <h2 style={{color:'violet'}}>I am a 3rd year Engineering Student </h2>
-    <h2 style={{color:'violet'}}>My skills are programming, communication, web dev and dsa  </h2>
-    <h2 style={{color:'violet'}}>Welcome to React App Development </h2>
-   <ICardGallery />
-    */}
-   
-    {/* <MyState /> */}
-    <ColorChange />
-    </div>
+    
+
+  <BrowserRouter>
+  <Routes>
+    <Route path='/login' element={<Login />}> </Route>
+    <Route path='/register' element={<Registration />}> </Route>
+
+    <Route path='/dashboard' element={<Dashboard></Dashboard>}> </Route>
+
+    <Route path='/' element={<Home></Home>}
+
+  </Routes>
+  </BrowserRouter>
+
+    
+    
   )
 }
 
