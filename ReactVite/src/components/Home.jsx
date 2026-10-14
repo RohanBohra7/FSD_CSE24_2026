@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet,Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -16,6 +17,8 @@ function Home() {
                 </li>
             </ul>
         </nav>
+
+        <Outlet />
     </div>
   )
 }
